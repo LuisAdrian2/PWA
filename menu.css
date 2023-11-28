@@ -1,0 +1,44 @@
+/* Logo */
+header .logo {
+  width: 15vmax;
+  cursor: pointer;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  padding: 10px; /* Añadido padding para mejorar la experiencia táctil */
+  border-radius: 5px; /* Reducido el radio del borde para un aspecto más sutil */
+}
+
+.menu li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Media Query para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas más pequeñas */
+    align-items: center; /* Centra los elementos en el eje vertical */
+  }
+
+  .menu li {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "lang": "es-mx", 
+    "name": "CAKE WAR", 
+    "short_name": "Encuentra novedades sobre el desarrollo",
+    "description": "Informacion sobre el desarrollo del jeugo CAKE WAR, Pronto saldra al publico proximamanete",
+    "start_url": "/",
+    "background_color": "#FF0000",
+    "theme_color": "#FF0000",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [{
+        "src": "/logos.png",
+        "sizes":"512x512"
+    }]
+
+}

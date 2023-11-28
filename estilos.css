@@ -1,0 +1,205 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.inicio {
+    height: 100%;
+}
+
+.inicio .fondo-cielo {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1)),
+        url(img/cielo.png);
+    background-size: cover;
+    height: 85%;
+    z-index: -10;
+}
+
+.inicio .fondo-img {
+    background: url(img/inicio1.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: 5;
+}
+
+.inicio .contenido-seccion {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.inicio .contenido-seccion header {
+    padding: 50px 20px;
+    z-index: 100;
+    position: relative;
+}
+
+.inicio .contenido-seccion header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Londrina Solid';
+}
+
+.inicio .contenido-seccion header nav a {
+    text-decoration: none;
+    color: #334755;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.inicio .contenido-seccion header nav a i {
+    font-size: 30px;
+}
+
+.titulo {
+    font-family: 'Finger Paint';
+    text-align: center;
+    font-size: 12rem;
+    color: #334755;
+    position: relative;
+}
+
+/* SECCION TOURS */
+.tours {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 100;
+}
+
+h2 {
+    color: #334755;
+    font-size: 20px;
+    font-family: 'Londrina Solid';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.tours>p {
+    color: #666;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.tours .fila {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas más pequeñas */
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.tours .fila .col {
+    width: 30%;
+    margin-bottom: 20px; /* Agregado para dar espacio entre las columnas en pantallas más pequeñas */
+}
+
+.tours .fila i {
+    font-size: 35px;
+    color: #334755;
+    display: inline-block;
+}
+
+.tours .fila p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+/* SECCION INFO */
+.info {
+    position: relative;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info .texto {
+    background: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    border: 2px solid #334755;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+
+.info .texto p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+/* SECCION DESCUBRIR */
+.descubrir .contenido-seccion {
+    position: relative;
+    width: 100%;
+    bottom: 150px;
+}
+
+.descubrir .contenido-seccion img {
+    width: 100%;
+}
+
+.descubrir .contenido-seccion .info {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    max-width: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 150px;
+}
+
+.descubrir .contenido-seccion .info p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.descubrir .contenido-seccion button {
+    border: none;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-size: 8rem; /* Ajusta el tamaño del título para pantallas más pequeñas */
+    }
+
+    .tours .fila .col {
+        width: 100%; /* Hace que las columnas ocupen el ancho completo en pantallas más pequeñas */
+    }
+
+    .info .texto {
+        right: 10px; /* Ajusta la posición del texto en pantallas más pequeñas */
+    }
+
+    .descubrir .contenido-seccion .info {
+        padding-top: 80px; /* Ajusta el espacio superior en pantallas más pequeñas */
+    }
+}

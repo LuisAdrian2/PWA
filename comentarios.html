@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contactos</title>
+    <link rel="stylesheet" href="./styles-comen.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<header id="header">
+    <img class="logo" alt="logo" src="./images/logo.png">
+    <div class="menu"></div>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="Comentar.html">COMENTARIOS</a></li>
+            <li><a href="Historia.html">HISTORIA</a></li>
+        </ul>
+    </nav>
+</header>
+
+    
+<body>
+    <div class="container">
+        <h2>!HAZNOS UN COMENTARIO¡</h2>
+        <form action="" id="contactForm">
+            <div class="alert">Tu mensaje se a enviado</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Su Nombre...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Su Email....." />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Mesaje"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://console.firebase.google.com/u/0/project/contacto-38788/database/contacto-38788-default-rtdb/data/~2F?hl=es-419"></script>>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maps</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>HISTORIA</title>
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section class="inicio">
+        <div class="fondo-cielo"></div>
+        <div class="fondo-img"></div>
+        <div class="contenido-seccion">
+            <header>
+                <div class="menu"></div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="Comentar.html">COMENTARIOS</a></li>
+                        <li><a href="Historia.html">HISTORIA</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            <div class="titulo efecto1">
+                HISTORIA
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION TOUR -->
+    <section class="tours">
+        <h2>CONTEXTO HISTORICO</h2>
+        <p>La Guerra de los Pasteles, también conocida como la Intervención Francesa en México, ocurrió entre 1838 y 1839. Fue un conflicto entre México y Francia que tuvo sus raíces en disputas comerciales y financieras.</p>
+
+        <div class="fila">
+            <div class="col">
+                <i class="fa-regular fa-map"></i>
+                <h2>Antecedentes Comerciales</h2>
+                <p>México tenía deudas con ciudadanos franceses debido a pérdidas sufridas durante conflictos internos.</p>
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-compass"></i>
+                <h2>Reclamaciones Francesas</h2>
+                <p> Las reclamaciones no resueltas llevaron a tensiones diplomáticas. Francia exigió una compensación económica.</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-fire"></i>
+                <h2>Bloqueo Francés</h2>
+                <p>En 1838, Francia decidió aplicar un bloqueo naval a los puertos mexicanos en un intento de presionar a México para el pago.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION INFO -->
+    <section class="info">
+        <img src="img/info.png" alt="">
+        <div class="texto">
+            <h2>DATOS INTERESANTES</h2>
+            <p>Incidente de la Pastry War: El conflicto recibió su nombre por un incidente específico que sirvió como pretexto para intensificar la hostilidad. Un cañonazo mexicano impactó en una pastelería de un ciudadano francés en Ciudad de México, lo que llevó a Francia a utilizar este evento como justificación para una intervención militar más agresiva.
+
+                Objetivos Políticos y Económicos: Además de buscar el reembolso de las deudas, la intervención francesa también tenía objetivos políticos y económicos más amplios, incluida la influencia en los asuntos internos de México.</p>
+            <p>Desembarco en Veracruz: Las tensiones escalaron cuando tropas francesas desembarcaron en Veracruz en noviembre de 1838, marcando el comienzo de una fase militar más activa del conflicto.</p>
+        </div>
+  
+    </section>
+
+    <!-- SECCION DESCUBRIR -->
+    
+    <section class="descubrir" id="descubrir">
+        <h2 class="titulo efecto2">UBICACION</h2>
+        <div class="contenido-seccion">
+            <img src="img/descubrir.png" alt="">
+            <div class="info">
+                <h2>Donde se dio el conflicto </h2>
+                <p>
+              El conflicto principal de la Guerra de los Pasteles tuvo lugar en México, específicamente en la ciudad de Veracruz. En noviembre de 1838, las tropas francesas desembarcaron en Veracruz como parte de la intervención militar durante este conflicto. La ciudad de Veracruz, ubicada en la costa del Golfo de México, fue un punto estratégico tanto para las operaciones militares como para el control de los puertos y las rutas comerciales. </p>
+            </div>
+        </div>
+<body>
+	<div id="map"></div>
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
